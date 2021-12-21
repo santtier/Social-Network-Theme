@@ -4,27 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Welcome to the DevConnector</title>
   </head>
   <body>
     <nav class="main-nav bg-dark">
       <h1 class="main-nav__title">
-        <a class="main-nav__item" href="dashboard.html"><i class="fas fa-code"></i> Dev Connector </a>
+        <a class="main-nav__item" href="./dashboard.html"
+          ><i class="fas fa-code"></i> Dev Connector
+        </a>
       </h1>
       <ul class="main-nav__list">
-        <li><a class="main-nav__item" href="profiles.html">Developers</a></li>
-        <li><a class="main-nav__item" href="posts.html">Posts</a/li>
-        <li>|<a class="main-nav__item" href="dashboard.html">
-          <i class="fas fa-user"></i>
-          <span class="hide-sm">Dashboard</span></a>
+        <li><a class="main-nav__item" href="./profiles.html">Developers</a></li>
+        <li><a class="main-nav__item" href="./posts.html">Posts</a></li>
+        <li>
+          |<a class="main-nav__item" href="./dashboard.html">
+            <i class="fas fa-user"></i>
+            <span class="hide-sm">Dashboard</span></a
+          >
         </li>
-        <li><a class="main-nav__item" href="login.html">
-          <i class="fas fa-sign-out-alt"></i>
-          <span class="hide-sm">Logout</span></a>
+        <li>
+          <a class="main-nav__item" href="./login.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="hide-sm">Logout</span></a
+          >
         </li>
       </ul>
     </nav>
@@ -39,13 +48,30 @@
       <small>* = required field</small>
       <form class="form">
         <div class="form__group">
-          <input class="form__input" type="text" placeholder="* Job Title" name="title" required />
+          <input
+            class="form__input"
+            type="text"
+            placeholder="* Job Title"
+            name="title"
+            required
+          />
         </div>
         <div class="form__group">
-          <input class="form__input" type="text" placeholder="* Company" name="company" required />
+          <input
+            class="form__input"
+            type="text"
+            placeholder="* Company"
+            name="company"
+            required
+          />
         </div>
         <div class="form__group">
-          <input class="form__input" type="text" placeholder="Location" name="location" />
+          <input
+            class="form__input"
+            type="text"
+            placeholder="Location"
+            name="location"
+          />
         </div>
         <div class="form__group">
           <h4>From Date</h4>
@@ -68,7 +94,7 @@
           ></textarea>
         </div>
         <input type="submit" class="form__button btn btn-primary my-1" />
-        <a class="btn my-1" href="dashboard.html">Go Back</a>
+        <a class="btn my-1" href="./dashboard.html">Go Back</a>
       </form>
     </section>
     <script
