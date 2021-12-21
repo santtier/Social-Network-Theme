@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/71a069b2eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Welcome to the DevConnector</title>
+  </head>
+  <body>
+    <nav class="main-nav bg-dark">
+      <h1 class="main-nav__title">
+        <a class="main-nav__item" href="dashboard.html"><i class="fas fa-code"></i> Dev Connector </a>
+      </h1>
+      <ul class="main-nav__list">
+        <li><a class="main-nav__item" href="profiles.html">Developers</a></li>
+        <li><a class="main-nav__item" href="register.html">Register</a/li>
+        <li><a class="main-nav__item" href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <section class="container">
+      <!-- Alerts -->
+      <div class="alert alert-danger">
+        Invalid Credentials
+      </div>
+      
+      <h1 class="large text-primary">
+        Sign In
+      </h1>
+      <p class="lead"><i class="fas fa-user"></i>Sign into your Account</p>
+      <form action="dashboard.html" class="form">
+        <div class="form__group">
+          <input class="form__input" type="email" placeholder="Email Address">
+        </div>
+        <div class="form__group">
+          <input class="form__input" type="password" placeholder="Password" minlength="6">
+        </div>
+        <input type="submit" value="Login" class="form__button btn btn-primary">
+      </form>
+      <p class="my-1">
+        Don't have an account? <a href="register.html">
+          Sign Up
+        </a>
+      </p>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/71a069b2eb.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

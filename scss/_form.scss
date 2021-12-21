@@ -1,0 +1,54 @@
+%toolbelt {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+}
+
+.form {
+  &__group {
+    margin: 1.2em 0;
+  }
+  &__text {
+    display: block;
+    margin-top: 0.3em;
+    color: #888;
+  }
+  &__input {
+    @extend %toolbelt;
+  }
+  &__select {
+    @extend %toolbelt;
+  }
+  &__textarea {
+    @extend %toolbelt;
+  }
+  &__button {
+    font: inherit;
+  }
+}
+
+.social-input {
+  display: flex;
+
+  &__icon {
+    width: 4rem;
+    padding: 0.5rem;
+
+    &--bg-tw {
+      color: #38a1f3;
+    }
+    &--bg-fb {
+      color: #3b5998;
+    }
+    &--bg-ig {
+      color: #3f729b;
+    }
+    &--bg-yt {
+      color: #c4302b;
+    }
+    &--bg-in {
+      color: #0077b5;
+    }
+  }
+}

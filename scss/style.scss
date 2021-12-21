@@ -1,0 +1,186 @@
+@import "config";
+@import "utilities";
+@import "form";
+
+// Extend
+%equal-flex-propierties {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+img {
+  width: 100%;
+}
+
+//Navbar
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 0.7em 2em;
+  border-bottom: solid 1px $primary-color;
+  opacity: 0.9;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin: 0 0.25em;
+    padding: 0.45em;
+    color: #fff;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+// Landing
+.landing {
+  position: relative;
+  height: 100vh;
+  background: url("../img/showcase.jpg") center center/cover no-repeat;
+
+  &__inner {
+    @extend %equal-flex-propierties;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+// Profiles Page
+.profile {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 1em;
+  padding: 1em;
+  line-height: 1.8;
+}
+
+// Profile Page
+.profile-grid {
+  display: grid;
+  grid-template-areas:
+    "top top"
+    "about about"
+    "exp edu"
+    "github github";
+  gap: 1em;
+
+  .profile-top {
+    grid-area: top;
+    @extend %equal-flex-propierties;
+
+    &__image {
+      width: 250px;
+    }
+
+    &__icon {
+      margin: 0 0.3em;
+      color: #fff;
+
+      &:hover {
+        color: $dark-color;
+      }
+    }
+  }
+  .profile-about {
+    grid-area: about;
+    text-align: center;
+
+    &__skills {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .profile-experience {
+    grid-area: exp;
+
+    &__body {
+      margin-bottom: 1em;
+      padding-bottom: 1em;
+      border-bottom: 1px dotted #ccc;
+    }
+  }
+  .profile-education {
+    grid-area: edu;
+  }
+  .profile-github {
+    grid-area: github;
+
+    &__repo {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__body {
+      width: 70%;
+    }
+
+    &__stats {
+      width: 20%;
+    }
+  }
+}
+
+.profile-experience__text,
+.profile-education__text {
+  margin: 0.5em;
+}
+
+// Posts Page
+.post-form__header {
+  padding: 0.5em;
+}
+
+.post__body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.post__user {
+  text-align: center;
+}
+
+.post__image {
+  width: 200px;
+}
+
+@import "mobile";

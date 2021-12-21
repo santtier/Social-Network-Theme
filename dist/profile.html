@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Welcome to the DevConnector</title>
+  </head>
+  <body>
+    <nav class="main-nav bg-dark">
+      <h1 class="main-nav__title">
+        <a class="main-nav__item" href="dashboard.html"><i class="fas fa-code"></i> Dev Connector </a>
+      </h1>
+      <ul class="main-nav__list">
+        <li><a class="main-nav__item" href="profiles.html">Developers</a></li>
+        <li><a class="main-nav__item" href="register.html">Register</a/li>
+        <li><a class="main-nav__item" href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <section class="container">
+      <a href="profiles.html" class="btn">Back To Profiles</a>
+
+      <div class="profile-grid my-1">
+        <!-- Top -->
+        <section class="profile-top bg-primary p-2">
+          <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="" class="profile-top__image round-img my-1">
+
+          <h1 class="large">John Doe</h1>
+          <p class="lead">Developer at Micrsoft</p>
+          <p>Seattle, WA</p>
+          <div class="my-1">
+            <a class="profile-top__icon" href="#"><i class="fas fa-globe fa-2x"></i></a>
+            <a class="profile-top__icon" href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a class="profile-top__icon" href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a class="profile-top__icon" href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a class="profile-top__icon" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          </div>
+        </section>
+        <!-- About -->
+        <section class="profile-about bg-light p-2">
+          <h2 class="text-primary">John's Bio</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae autem esse nostrum. Ex veritatis nam maxime tenetur architecto aut cum.
+          </p>
+          <div class="line"></div>
+          <h2 class="text-primary">Skill Set</h2>
+          <div class="profile-about__skills">
+            <div class="p-1">
+              <i class="fas fa-check"></i>HTML
+            </div>
+            <div class="p-1">
+              <i class="fas fa-check"></i>CSS
+            </div>
+            <div class="p-1">
+              <i class="fas fa-check"></i>JavaScript
+            </div>
+            <div class="p-1">
+              <i class="fas fa-check"></i>Python
+            </div>
+          </div>
+        </section>
+        <!-- Experience -->
+        <section class="profile-experience bg-white p-2">
+          <h2 class="text-primary">Experiences</h2>
+          <div class="profile-experience__body">
+            <h3>Microsoft</h3>
+            <p class="profile-experience__text">Oct 2011 - Current</p>
+            <p class="profile-experience__text"><strong>Position: </strong> Senior Developer</p>
+            <p class="profile-experience__text"><strong>Description: </strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor reprehenderit assumenda porro vel quo. Debitis.</p>
+          </div>
+          <div>
+            <h3>Sum Mycrosystems</h3>
+            <p class="profile-experience__text">Oct 2004 - Nov 2018</p>
+            <p class="profile-experience__text"><strong>Position: </strong> Systems Admin</p>
+            <p class="profile-experience__text"><strong>Description: </strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor reprehenderit assumenda porro vel quo. Debitis.</p>
+          </div>
+        </section>
+        <!-- Education -->
+        <section class="profile-education bg-white p-2">
+          <h2 class="text-primary">Education</h2>
+          <div>
+            <h3>University of Washington</h3>
+            <p class="profile-education__text">Sep 1993 - June 1999</p>
+            <p class="profile-education__text"><strong>Degree: </strong> Masters</p>
+            <p class="profile-education__text"><strong>Field Of Study: </strong> Computer Science</p>
+            <p class="profile-education__text"><strong>Description: </strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor reprehenderit assumenda porro vel quo. Debitis.</p>
+          </div>
+        </section>
+        <!-- Github Repository -->
+        <section class="profile-github">
+          <h2 class="text-primary my-1">
+            <i class="fab fa-github"></i> Github Repos
+          </h2>
+          <article class="profile-github__repo bg-white my-1 p-1">
+            <div class="profile-github__body">
+              <h4><a class="text-primary" href="#">Repo One</a></h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nam!</p>
+            </div>
+
+            <div class="profile-github__stats">
+              <ul>
+                <li class="badge badge-primary">Stars: 44</li>
+                <li class="badge badge-dark">Watchers: 20</li>
+                <li class="badge badge-light">Forks: 25</li>
+              </ul>
+            </div>
+          </article>
+          <article class="profile-github__repo bg-white my-1 p-1">
+            <div class="profile-github__body">
+              <h4><a class="text-primary" href="#">Repo Two</a></h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nam!</p>
+            </div>
+
+            <div class="profile-github__stats">
+              <ul>
+                <li class="badge badge-primary">Stars: 44</li>
+                <li class="badge badge-dark">Watchers: 20</li>
+                <li class="badge badge-light">Forks: 25</li>
+              </ul>
+            </div>
+          </article>
+          <article class="profile-github__repo bg-white my-1 p-1">
+            <div class="profile-github__body">
+              <h4><a class="text-primary" href="#">Repo Three</a></h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nam!</p>
+            </div>
+
+            <div class="profile-github__stats">
+              <ul>
+                <li class="badge badge-primary">Stars: 44</li>
+                <li class="badge badge-dark">Watchers: 20</li>
+                <li class="badge badge-light">Forks: 25</li>
+              </ul>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/71a069b2eb.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
